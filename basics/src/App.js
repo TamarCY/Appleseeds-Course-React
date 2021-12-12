@@ -1,10 +1,10 @@
 import './App.css';
-import Boxes from './components/Boxes/Boxes';
+import Quiz from './components/Boxes/Quiz/Quiz';
 
 function App() {
   return (
-      <Boxes></Boxes>
-  );
+    <Quiz></Quiz>
+    );
 }
 
 export default App;
