@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.green-box {
+    position: relative;
+    background-color: greenyellow;   
+    height: 200px;
+    width: 400px; 
+}
+
+.blue-box {
+    background-color: lightblue;
+    height: 180px;
+    width: 380px;
+}
+
+.pink-box {
+    background-color: pink;
+    height: 160px;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.purple-box {
+    position: relative;;
+    background-color: plum;
+    height: 100px;
+    width: 230px;
+    margin: 8px;
+}
+
+
