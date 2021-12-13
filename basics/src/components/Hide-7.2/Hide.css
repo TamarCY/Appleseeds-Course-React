@@ -1,0 +1,16 @@
+.outer {
+    height: 200px;
+    width: 100px;
+    border: solid
+}
+
+.inner {
+    height: 100px;
+    width: 80px;
+    background-color: yellow;
+    margin: 10px;
+}
+
+.hide {
+    display: none;
+}
