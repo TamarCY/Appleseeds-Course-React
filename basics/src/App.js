@@ -1,9 +1,11 @@
 import './App.css';
-import Quiz from './components/Boxes/Quiz/Quiz';
+import Buttons from './components/Buttons/Bouttons';
+ 
+
 
 function App() {
   return (
-    <Quiz></Quiz>
+    <Buttons/>
     );
 }
 
