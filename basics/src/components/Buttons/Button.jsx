@@ -1,10 +1,18 @@
 import React from "react";
+import "./Buttons.css"
 
-const Button = (props) => {
+
+class Button extends React.Component {
+    constructor(props){
+        super(props);
+    }
+    render () {
     return (
-    <button style={props.style}>{props.buttonText}</button>
+    <button className={this.props.styleWithProps} style={this.props.style}>{this.props.buttonText}</button>
     )
 }
+}
+
 
 
 export default Button;

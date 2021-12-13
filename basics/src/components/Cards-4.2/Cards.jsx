@@ -2,8 +2,9 @@ import React from "react";
 import Card from "./Card";
 import "./Card.css";
 
- const Cards = () => {
-     return (
+ class Cards extends React.Component {
+     render () {
+         return (
          < div className="allCards">
          <Card 
             imgUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Ansicht_1.jpg/500px-Ansicht_1.jpg"
@@ -27,8 +28,8 @@ import "./Card.css";
             exploreLink ="https://en.wikipedia.org/wiki/Sitges"
             />
         </div>
-         
-     )
+         )
+     }
  }
 
 
