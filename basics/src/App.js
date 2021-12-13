@@ -1,11 +1,11 @@
 import './App.css';
-import Buttons from './components/Buttons/Bouttons';
+import Cards from './components/Cards-4.2/Cards';
  
 
 
 function App() {
   return (
-    <Buttons/>
+    <Cards/>
     );
 }
 

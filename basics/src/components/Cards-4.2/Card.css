@@ -1,0 +1,22 @@
+.card{
+    height: 700px;
+    width:300px;
+    margin: 20px;
+    border: solid;
+}
+
+img {
+    width: 100%;
+    height: 50%;
+}
+
+.allCards{
+    display: flex;
+}
+
+
+a {
+    margin: 5px;
+}
+
+
