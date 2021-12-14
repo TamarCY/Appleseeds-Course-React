@@ -7,6 +7,7 @@ import Hide from './components/Hide-7.2/Hide';
 import LifeCycle from './components/LifeCycle-8.1/LifeCycle';
 import BoxAnimation from './components/BoxAnimation-8.2/BoxAnimation';
 import ChangingBox from './components/ChangingBox-8.3/ChangingBox';
+import SpinnerApp from './components/Spinner-9.1/SpinnerApp';
  
 
 
@@ -19,7 +20,8 @@ function App() {
       // <Hide/>
       // <LifeCycle/>
       // <BoxAnimation/>
-      <ChangingBox/>
+      // <ChangingBox/>
+      <SpinnerApp/>
           );
 }
 

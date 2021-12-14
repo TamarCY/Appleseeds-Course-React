@@ -8,22 +8,27 @@ class ChangingBox extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            divClass: "box-animation"
+            divClass: "empty",
+            counter: 0
         }
 
     }
 
-    // hsl(0, 100%, 50%)
+    colors = ["blue", "red", "green", "yellow", "white"]
 
     componentDidMount() {
-       setTimeout(()=>{
-           this.setState({divClass:"circle-animation"})
-       },2500)    
+        setTimeout(() => {
+            this.setState((prevState) => {
+                return (
+                { counter: prevState.counter + 1 }
+                )
+            })
+        }, 1000)
     }
 
     render() {
         return (
-            <div className={this.state.divClass}></div>
+            <div className={this.state.divClass} >{this.state.counter}</div>
         )
 
     }
