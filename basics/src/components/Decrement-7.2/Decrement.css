@@ -1,0 +1,16 @@
+.black {
+    background-color: black;
+    color: white
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+p {
+    width: 30px;
+}

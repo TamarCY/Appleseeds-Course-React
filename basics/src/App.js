@@ -1,9 +1,10 @@
 import './App.css';
 import Buttons from './components/Buttons/Buttons';
 import Cards from './components/Cards-4.2/Cards';
-import Increment from './components/Incremant-7.1/Increment';
+import Increment from './components/Increment-7.1/Increment';
 import Decrement from './components/Decrement-7.2/Decrement';
 import Hide from './components/Hide-7.2/Hide';
+import LifeCycle from './components/LifeCycle-8.1/LifeCycle';
  
 
 
@@ -13,7 +14,8 @@ function App() {
       // <Cards/>
       // <Increment/>
       // <Decrement/>
-      <Hide/>
+      // <Hide/>
+      <LifeCycle/>
           );
 }
 
