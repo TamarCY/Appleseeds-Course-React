@@ -6,6 +6,7 @@ import Decrement from './components/Decrement-7.2/Decrement';
 import Hide from './components/Hide-7.2/Hide';
 import LifeCycle from './components/LifeCycle-8.1/LifeCycle';
 import BoxAnimation from './components/BoxAnimation-8.2/BoxAnimation';
+import ChangingBox from './components/ChangingBox-8.3/ChangingBox';
  
 
 
@@ -17,7 +18,8 @@ function App() {
       // <Decrement/>
       // <Hide/>
       // <LifeCycle/>
-      <BoxAnimation/>
+      // <BoxAnimation/>
+      <ChangingBox/>
           );
 }
 

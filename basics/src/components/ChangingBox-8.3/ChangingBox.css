@@ -1,0 +1,34 @@
+.box-animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: box;
+    animation-duration: 2.5s;
+  }
+  
+  @keyframes box {
+    0%   {background-color:red}
+    25%  {background-color:yellow}
+    50%  {background-color:blue}
+    75%  {background-color:green}
+    100% {background-color:pink}
+  }
+
+
+  .circle-animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: circle;
+    animation-duration: 2.5s;
+    border-radius: 50%;
+  }
+
+  @keyframes circle {
+    0%   {background-color:red}
+    25%  {background-color:yellow}
+    50%  {background-color:blue}
+    75%  {background-color:green}
+    100% {background-color:pink}
+  }
+  
