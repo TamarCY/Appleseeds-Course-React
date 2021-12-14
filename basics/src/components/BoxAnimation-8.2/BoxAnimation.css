@@ -1,0 +1,28 @@
+.animation-div {  
+    position: relative;
+    animation-name: pink-boxes;
+    animation-duration: 4s;
+
+}
+
+.box-div {
+    margin: 5px;
+    background-color:hotpink;
+    height: 20px;
+    width: 20px;
+}
+
+
+@keyframes pink-boxes {
+    from {left: 0px;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
