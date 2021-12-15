@@ -13,8 +13,16 @@ class FormInput extends React.Component {
     }
        
     render() {
+        console.log(this.props.data)
         return (
-           <div>OUTPUT</div>
+            <div>
+           <p>First name:{this.props.data.firstName}</p>
+           <p>Last name:{this.props.data.lastName}</p>
+           <p>Age:{this.props.data.age}</p>
+           <p>{this.props.data.freeText}</p>
+           <button onClick={(e)=>this.props.callback(e)} id="back">Back</button>
+           <button onClick={(e)=>this.props.callback(e)} id="send">Send Survey</button>
+           </div>
         )
 
     }

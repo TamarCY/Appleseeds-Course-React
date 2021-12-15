@@ -22,42 +22,48 @@ class Form extends React.Component {
 
     }
 
-    // onFormSubmit (userInput) {
 
     onFormSubmit = (event, data)=> {
         event.preventDefault();
-        this.setState({firstName:data})
-    }
+        // console.log(data)
+        this.setState({firstName: data.firstName,
+                    lastName: data.lastName,
+                    age: data.age,
+                    freeText: data.freeText,
+                    displayInput: false,
+                    displayOutput: true
 
-   
-
-    onFormChange = (event) => {
-        this.setState({firstName: event.target.value})
+        })
     }
 
     
 
+   
+    
+   
+    outputButtons = (event) => {
+        event.target.id === "back" && this.setState({displayOutput:false, displayInput:true})
+        event.target.id === "send" && this.setState({displayOutput:false, displayMassage: true})
+    }
+    
+
     renderContent() {
             if (this.state.displayInput) {
-                return <FormInput callback={this.onFormSubmit}/>
+                return <FormInput callback={this.onFormSubmit} data={this.state}/>
             }
             if (this.state.displayOutput) {
-                return <FormOutput/>
+                return <FormOutput data={this.state} callback={this.outputButtons}/>
             }
             if (this.state.displayMassage) {
                 return <FormMassage/>
             }
         }
         
-    
+   
     render() {
         return (
             <>
                 {this.renderContent()}
-                {/* {this.state.displayInput  && <FormInput/>} */}
-            <div>{this.state.firstName}</div>
-            <div>{this.state.lastName}</div>
-
             </>
 
         )
