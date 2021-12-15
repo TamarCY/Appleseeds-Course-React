@@ -8,6 +8,7 @@ import LifeCycle from './components/LifeCycle-8.1/LifeCycle';
 import BoxAnimation from './components/BoxAnimation-8.2/BoxAnimation';
 import ChangingBox from './components/ChangingBox-8.3/ChangingBox';
 import SpinnerApp from './components/Spinner-9.1/SpinnerApp';
+import Child2Parent from './components/Child2Partnt-11.1/Child2Parent';
  
 
 
@@ -21,7 +22,8 @@ function App() {
       // <LifeCycle/>
       // <BoxAnimation/>
       // <ChangingBox/>
-      <SpinnerApp/>
+      // <SpinnerApp/>
+       <Child2Parent/>
           );
 }
 
