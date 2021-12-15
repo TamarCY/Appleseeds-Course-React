@@ -9,6 +9,7 @@ import BoxAnimation from './components/BoxAnimation-8.2/BoxAnimation';
 import ChangingBox from './components/ChangingBox-8.3/ChangingBox';
 import SpinnerApp from './components/Spinner-9.1/SpinnerApp';
 import Child2Parent from './components/Child2Partnt-11.1/Child2Parent';
+import Form from './components/Form-11.3/Form';
  
 
 
@@ -23,7 +24,8 @@ function App() {
       // <BoxAnimation/>
       // <ChangingBox/>
       // <SpinnerApp/>
-       <Child2Parent/>
+      //  <Child2Parent/>
+      <Form/>
           );
 }
 
