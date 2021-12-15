@@ -24,15 +24,18 @@ class Form extends React.Component {
 
     // onFormSubmit (userInput) {
 
-    onFormSubmit = (event)=> {
-        event.preventDefault()
-        this.setState((prev)=>{return(prev.firstName = event.target[0].value)})
-        this.setState({lastName:event.target[1].value})
-
-        // console.log(event.target[0].value)
-        console.log("state" ,this.state.firstName)
-
+    onFormSubmit = (event, data)=> {
+        event.preventDefault();
+        this.setState({firstName:data})
     }
+
+   
+
+    onFormChange = (event) => {
+        this.setState({firstName: event.target.value})
+    }
+
+    
 
     renderContent() {
             if (this.state.displayInput) {

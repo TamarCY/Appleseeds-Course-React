@@ -14,18 +14,17 @@ class FormInput extends React.Component {
         }
 
     }
-    onFormSubmit = (event) => {
-        event.preventDefault();
-        console.log(this.state)
-        console.log(event.target[0].value)
+    
+    onInputChange = (event)=> {
+        // this.setState({event: e.target.value})
     }
+
     render() {
         return (
-            <form onSubmit={(event)=>this.props.callback(event)}>
-                <label>
+            <form onSubmit={(event)=>this.props.callback(event, this.state.firstName)}>
+                <label>  
                     First Name:
-                    <input type="text" name="first" 
-                    value = {this.state.firstName}
+                    <input type="text" name="firstName" 
                     onChange={(e)=>this.setState({firstName: e.target.value})} />
                 </label>
                 <label>
