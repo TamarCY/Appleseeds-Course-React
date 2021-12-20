@@ -13,10 +13,12 @@ import Form from './components/Form-11.3/Form';
 import ChuckNorris from './components/ChuckNorris-12.1/ChuckNorris';
 import AvatarApp from './components/Avatars-13.2 (api)/AvatarsApp';
 import DataApp from './components/ DataMassage-13.1/DataApp'
+import Focus from './components/Focus-ref-14.1/Focus';
 
 
 function App() {
   return (
+    <Focus/>
       // <Buttons/>
       // <Cards/>
       // <Increment/>
@@ -30,7 +32,7 @@ function App() {
       // <Form/>
       // <ChuckNorris/>
     // <AvatarApp/>
-<DataApp/>
+// {/* <DataApp/> */}
       );
 }
 
