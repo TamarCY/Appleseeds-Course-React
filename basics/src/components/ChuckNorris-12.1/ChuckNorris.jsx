@@ -20,6 +20,7 @@ class ChuckNorris extends React.Component {
 
     getCategory = async () => {
         const response = await axios.get("https://api.chucknorris.io/jokes/categories");
+        console.log(response)
         this.setState({ categories: response.data },
             () => { this.renderCategories() }
 

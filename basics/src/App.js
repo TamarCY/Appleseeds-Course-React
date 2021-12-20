@@ -11,7 +11,8 @@ import SpinnerApp from './components/Spinner-9.1/SpinnerApp';
 import Child2Parent from './components/Child2Partnt-11.1/Child2Parent';
 import Form from './components/Form-11.3/Form';
 import ChuckNorris from './components/ChuckNorris-12.1/ChuckNorris';
- 
+import AvatarApp from './components/Avatars-13.2 (api)/AvatarsApp';
+import DataApp from './components/ DataMassage-13.1/DataApp'
 
 
 function App() {
@@ -27,8 +28,10 @@ function App() {
       // <SpinnerApp/>
       //  <Child2Parent/>
       // <Form/>
-      <ChuckNorris/>
-          );
+      // <ChuckNorris/>
+    // <AvatarApp/>
+<DataApp/>
+      );
 }
 
 export default App;
